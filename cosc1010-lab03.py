@@ -32,7 +32,7 @@ print (list[-1])
 #Using an F-string to access the first and second element print the string "COLORADO is south of WYOMING", matching the casing provided
 
 
-print (f"{list[1]} is south of {list[0]}")
+print (f"{list[1].upper()} is south of {list[0].upper()}")
 
 print("Part Two------------------------------------------------------------------------")
 #Append the following states to your list: Washington, Oregon, California and print your list
@@ -42,22 +42,28 @@ list.append ("California")
 
 print(list)
 #Again using the specific syntax mentioned in class overwrite the second to last element to be Maine, printing the list 
-list
+list [-2] = "Maine"
+print (list)
 
 #Insert the state Texas to be the third element in the list, again printing your list
-
+list [2] = "Texas"
+print(list)
 
 #Using the `del` statement remove the fourth item from the list, print your list 
-
-
+del list[3]
+print (list)
 #Remove Texas using its value, print the list
-
+list.remove ("Texas")
+print (list)
 print("Part Three----------------------------------------------------------------------")
 #Temporarily sort your list, print it both sorted and unsorted 
-
-
+print (list)
+list.sort ()
+print(list)
 #Permanently sort your list in reverse order, printing it out
-
+list.sort (reverse=True)
+print(list)
 
 #Using the reverse method reverse the list and print it
-
+list.reverse ()
+print (list)
