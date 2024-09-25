@@ -1,8 +1,8 @@
-# Your Name Here
+# Colter Makowski
 # UWYO COSC 1010
-# Submission Date
+# 9/29/24
 # Lab 03 
-# Lab Section: 
+# Lab Section:15 
 # Sources, people worked with, help given to: 
 # your
 # comments
@@ -17,29 +17,32 @@
 print("Part One------------------------------------------------------------------------")
 #We are going to start with the basics. Declare a list  states that contains the elements: Wyoming, Colorado, Montana in that order 
 #Note this is the ONLY point where you need to declare the states list
-
+list = ["Wyoming", "Colorado", "Montana"]
 
 
 #print the entire list
 
-
+print (list)
 #now print the first element in the list
-
+print (list[0])
 
 #Print the last element using the syntax shown in class to access the final element (hint, think negatives)
 
-
+print (list[-1])
 #Using an F-string to access the first and second element print the string "COLORADO is south of WYOMING", matching the casing provided
 
 
-
+print (f"{list[1]} is south of {list[0]}")
 
 print("Part Two------------------------------------------------------------------------")
 #Append the following states to your list: Washington, Oregon, California and print your list
+list.append ("Washington")
+list.append ("Oregon")
+list.append ("California")
 
-
+print(list)
 #Again using the specific syntax mentioned in class overwrite the second to last element to be Maine, printing the list 
-
+list
 
 #Insert the state Texas to be the third element in the list, again printing your list
 
